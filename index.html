@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iPhone 15 Pro Max</title>
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+
+<body>
+  <div class="iphone">
+    <div class="screen">
+      <div class="island">
+        
+      </div>
+      <div class="date">
+        Mon 23 Nov
+      </div>
+      <div class="time">
+        09:41
+      </div>
+
+      <div class="quick-btn torch">
+        <ion-icon name="ios-flashlight"></ion-icon>
+      </div>
+      <div class="quick-btn camera">
+        <ion-icon name="ios-camera"></ion-icon>
+      </div>
+
+      <div class="home-apps">
+        <div class="app" data-app="settings">
+          <img src="images/settings.jpg" alt="Settings">
+          <span>Settings</span>
+        </div>
+        <div class="app">
+          <img src="images/photos.jpg" alt="Photos">
+          <span>Photos</span>
+        </div>
+      </div>
+
+      <div class="dock">
+        <img src="images/phone.jpg" alt="Phone">
+        <img src="images/safari.jpg" alt="Safari">
+        <img src="images/messages.jpg" alt="Messages">
+        <img src="images/camera.jpg" alt="Camera">
+      </div>
+
+      <div class="settings" id="settings">
+        <div class="s-page active" data-page="main">
+          <div class="s-title">Settings</div>
+          <div class="s-group">
+            <div class="s-row s-tap" data-go="general">
+              <span class="s-ico"><img src="images/settings.jpg" alt=""></span>
+              <span class="s-label">General</span>
+              <ion-icon class="s-chev" name="ios-arrow-forward"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="s-page" data-page="general">
+          <div class="s-nav">
+            <div class="s-back" data-back><ion-icon name="ios-arrow-back"></ion-icon></div>
+            <div class="s-nav-title">General</div>
+          </div>
+          <div class="s-group">
+            <div class="s-row s-tap" data-go="about">
+              <span class="s-label">About</span>
+              <ion-icon class="s-chev" name="ios-arrow-forward"></ion-icon>
+            </div>
+            <div class="s-row s-tap" data-go="update">
+              <span class="s-label">Software Update</span>
+              <ion-icon class="s-chev" name="ios-arrow-forward"></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <div class="s-page" data-page="about">
+          <div class="s-nav">
+            <div class="s-back" data-back><ion-icon name="ios-arrow-back"></ion-icon></div>
+            <div class="s-nav-title">About</div>
+          </div>
+          <div class="s-group">
+            <div class="s-row"><span class="s-label">Name</span><span class="s-val">iPhone 15 Pro Max</span></div>
+            <div class="s-row"><span class="s-label">Software Version</span><span class="s-val" id="about-version"></span></div>
+          </div>
+        </div>
+
+        <div class="s-page" data-page="update">
+          <div class="s-nav">
+            <div class="s-back" data-back><ion-icon name="ios-arrow-back"></ion-icon></div>
+            <div class="s-nav-title">Software Update</div>
+          </div>
+          <div id="su" data-state="idle">
+            <div class="su-card">
+              <div class="su-spinner"></div>
+              <div class="su-title" id="su-title"></div>
+              <div class="su-text" id="su-text"></div>
+            </div>
+            <div class="su-progress">
+              <div class="su-bar"><i id="su-fill"></i></div>
+              <div class="su-pct" id="su-pct"></div>
+            </div>
+            <div class="s-group su-action">
+              <div class="s-row s-tap s-link" id="su-btn"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reboot" id="reboot">
+        <ion-icon name="logo-apple"></ion-icon>
+        <div class="rb-bar"><i></i></div>
+      </div>
+
+      <div class="swipe-bar"></div>
+    </div>
+  </div>
+  <script src="boot.js"></script>
+</body>
+
+</html>
