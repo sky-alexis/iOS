@@ -85,8 +85,6 @@ const isAppOpen = () => screen.classList.contains('app-open');
 const isRebooting = () => reboot.classList.contains('on');
 const wait = (ms) => new Promise((r) => setTimeout(r, ms));
 
-document.getElementById('about-version').textContent = U ? U.version : '-';
-
 function renderPages() {
   const top = stack[stack.length - 1];
   Object.keys(pages).forEach((k) => {
