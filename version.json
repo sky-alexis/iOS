@@ -1,0 +1,5 @@
+{
+  "version": "1.2",
+  "notes": "iOS 17 update:\n- Settings icon in General\n- Simpler back button",
+  "files": ["index.html", "style.css", "script.js"]
+}
