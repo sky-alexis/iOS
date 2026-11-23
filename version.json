@@ -1,4 +1,5 @@
 {
-  "version": "1.2",
+  "version": "17",
+  "notes": "iOS 17 update:\n- Settings icon in General\n- Simpler back button\n- Software Version shows iOS 17",
   "files": ["index.html", "style.css", "script.js"]
 }
